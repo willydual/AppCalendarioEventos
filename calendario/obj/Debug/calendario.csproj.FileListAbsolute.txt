@@ -1,0 +1,6 @@
+c:\users\oem\documents\visual studio 2013\Projects\calendario\calendario\bin\Debug\calendario.exe.config
+c:\users\oem\documents\visual studio 2013\Projects\calendario\calendario\bin\Debug\calendario.exe
+c:\users\oem\documents\visual studio 2013\Projects\calendario\calendario\bin\Debug\calendario.pdb
+c:\users\oem\documents\visual studio 2013\Projects\calendario\calendario\obj\Debug\calendario.csprojResolveAssemblyReference.cache
+c:\users\oem\documents\visual studio 2013\Projects\calendario\calendario\obj\Debug\calendario.exe
+c:\users\oem\documents\visual studio 2013\Projects\calendario\calendario\obj\Debug\calendario.pdb
