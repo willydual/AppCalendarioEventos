@@ -12,7 +12,10 @@ namespace calendario
         static void Main(string[] args)
         {
             imprimirMisEventos imprimir = new imprimirMisEventos();
-            imprimir.ImprimirListaEventos();
+            LeerAchivo ob = new LeerAchivo();
+            imprimir.ImprimirListaEventos(ob,@"eventos.txt");
+            Console.WriteLine(ob.CalculaLongitudDeLista(ob.GeneraListaEventos(@"eventos.txt")));
+            Console.WriteLine(ob.DivideEventosEnFechas(ob.GeneraListaEventos(@"eventos.txt")));
             Console.ReadKey();
         }
     }

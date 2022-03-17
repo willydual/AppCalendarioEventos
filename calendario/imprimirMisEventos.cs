@@ -6,21 +6,14 @@ using System.Threading.Tasks;
 
 namespace calendario
 {
-    public class imprimirMisEventos
+    public class imprimirMisEventos:IimprimirEventos
     {
-        LeerAchivo lectura = new LeerAchivo();
-        public void ImprimirListaEventos()
+        public void ImprimirListaEventos(LeerAchivo ob, string rutaDelArchivo)
         {
-            foreach (string envent in lectura.listaEventos())
+            foreach(string evento in ob.GeneraListaEventos(rutaDelArchivo))
             {
-                Console.WriteLine(envent);
+                Console.WriteLine(evento);
             }
-
-        }
-
-        public void RecuperaNombreEvento()
-        {
-
         }
     }
 }

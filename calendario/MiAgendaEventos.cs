@@ -24,7 +24,7 @@ namespace calendario
         //}
         LeerAchivo lectura = new LeerAchivo();
         public void agenda(){
-            foreach (string evento in lectura.listaEventos())
+            foreach (string evento in lectura.GeneraListaEventos(@"eventos.txt"))
             {
                 DateTime fechaEvento = DateTime.Parse(evento);
                 TimeSpan dias = DateTime.Now.Subtract(fechaEvento);

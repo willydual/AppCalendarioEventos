@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IimprimirEventos.cs" />
     <Compile Include="imprimirMisEventos.cs" />
+    <Compile Include="IleerArchivo.cs" />
     <Compile Include="LeerAchivo.cs" />
     <Compile Include="MiAgendaEventos.cs" />
     <Compile Include="Program.cs" />

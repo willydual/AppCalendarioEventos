@@ -7,16 +7,15 @@ using System.IO;
 
 namespace calendario
 {
-    class LeerAchivo
+    public class LeerAchivo:IleerArchivo
     {
-        //List<string> listOfNames = new List<string>()
-        public List<String> listaEventos(){
+        public List<string> GeneraListaEventos(string nombreArchivo)
+        {
             List<String> lista = new List<String>();
-            string nombreArchivo = @"eventos.txt";
-            using(StreamReader reader = new StreamReader(nombreArchivo))
+            using (StreamReader reader = new StreamReader(nombreArchivo))
             {
                 string linea;
-                while((linea = reader.ReadLine()) != null)
+                while ((linea = reader.ReadLine()) != null)
                 {
                     lista.Add(linea);
                 }
@@ -24,9 +23,23 @@ namespace calendario
             return lista;
         }
 
-        public int longitud()
+        public int CalculaLongitudDeLista(List<string> lista)
         {
-            return tam;
+            return lista.Count;
+        }
+
+        public string[] DivideEventosEnFechas(List<string> listaEventos)
+        {
+            int i = 0;
+            string texto = listaEventos[0];
+            string[] cadenas = texto.Split(',');
+            foreach(var sub in cadenas)
+            {
+                i = i + 1;
+                Console.WriteLine("Cadenas " + sub);
+            }
+
+            return cadenas;
         }
     }
 }
